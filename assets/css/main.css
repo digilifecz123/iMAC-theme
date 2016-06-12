@@ -1,0 +1,148 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:300,400);
+@import "font-awesome";
+
+body,html {
+  margin: 0;
+  padding: 0;
+}
+
+#wrapper {
+  width: 80%;
+  max-width: 1300px;
+  height: 100vh;
+  /*background-color: blue;*/
+  margin: 0 auto;
+}
+
+.about {
+  max-width: 560px;
+  position: relative;
+  /*vertical*/
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.about h1 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size: 2em;
+  color: #b6b6b6;
+  margin: 0px;
+}
+.about p {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 1.1em;
+  color: #3e3e3e;
+  text-align: left;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+li {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 10px 10px 0 0;
+  text-decoration: none;
+  float: left;
+}
+
+/* main components */
+.margin-top {
+  margin: 10px auto;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+.red {
+  color: red;
+}
+
+/* button */
+.button {
+  cursor: pointer;
+  background-color: inherit;
+  border: none;
+  border-radius: 5px;
+  color: black;
+  padding: 14px 0;
+  width: 120px;
+  /*font*/
+  text-align: center;
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 1em;
+}
+
+.button-portfolio {
+  background-color: #ea4c89;
+  border: 2px solid #ea4c89;
+  color: white;
+}
+
+.button-contact {
+  border: 2px solid #0077b5;
+  color: #0077b5;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+}
+
+/* button-portfolio EFFECT */
+.button-portfolio span {
+  position: relative;
+  transition: 0.5s;
+}
+
+.button-portfolio span:after {
+  /*dribbble icon*/
+  content: '\f17d';
+  font-size: 1.2em;
+  font-family: FontAwesome;
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -25px;
+  transition: 0.5s;
+}
+.button-portfolio:hover span {
+  padding-right: 25px;
+}
+
+.button-portfolio:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+/* button-contact EFFECT */
+.button-contact:hover {
+  background-color: #0077b5;
+  color: white;
+}
+
+/* monitor */
+#monitor {
+  position: relative;
+  top: -920px;
+  right: 1165px;
+  width: 2000px;
+  transform: rotate(-8deg);
+  padding: 0;
+}
+
+#keyboard {
+  position: relative;
+  top: -720px;
+  right: -50px;
+  width: 400px;
+  transform: rotate(-11deg);
+  padding: 0;
+}
