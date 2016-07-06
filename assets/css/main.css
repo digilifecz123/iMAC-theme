@@ -4,6 +4,7 @@
 body,html {
   margin: 0;
   padding: 0;
+  overflow: hidden;
 }
 
 #wrapper {
@@ -54,6 +55,12 @@ li {
 }
 
 /* main components */
+
+.center-relative {
+  position: relative;
+  left: -50%;
+}
+
 .margin-top {
   margin: 10px auto;
 }
@@ -128,6 +135,15 @@ a:link {
   color: white;
 }
 
+/* footer */
+#footer {
+  position: absolute;
+  bottom: 10px;
+  margin: 0 auto;
+  left: 50%;
+  
+}
+
 /* monitor */
 #monitor {
   position: relative;
@@ -135,7 +151,6 @@ a:link {
   right: 1165px;
   width: 2000px;
   transform: rotate(-8deg);
-  padding: 0;
 }
 
 #keyboard {
@@ -144,5 +159,12 @@ a:link {
   right: -50px;
   width: 400px;
   transform: rotate(-11deg);
-  padding: 0;
+}
+
+#mouse {
+  position: relative;
+  top: -820px;
+  left: 400px;
+  transform: rotate(-3deg);
+  width: 130px;
 }
